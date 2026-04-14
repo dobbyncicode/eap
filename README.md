@@ -36,7 +36,7 @@ eval "$($HOME/.local/bin/eap activate bash)"
 ### Fish
 Add to `~/.config/fish/config.fish`:
 ```fish
-eval ($HOME/.local/bin/eap activate fish)
+eval (~/.local/bin/eap activate fish)
 ```
 
 ### NuShell
