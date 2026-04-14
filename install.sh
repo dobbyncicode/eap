@@ -2,9 +2,7 @@
 
 set -e
 
-echo "eap installer v2"
-
-REPO_URL="https://raw.githubusercontent.com/dobbyncicode/eap/a76a064"
+REPO_URL="https://cdn.jsdelivr.net/gh/dobbyncicode/eap@main"
 
 mkdir -p "$HOME/.eap"
 mkdir -p "$HOME/.config/eap"
