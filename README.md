@@ -7,6 +7,11 @@ Minimalist environment and path manager.
 curl -sSL https://cdn.jsdelivr.net/gh/dobbyncicode/eap@v0.1.1/install.sh | sh
 ```
 
+If that doesn't work, try the commit SHA:
+```bash
+curl -sSL https://cdn.jsdelivr.net/gh/dobbyncicode/eap@e2b290f/install.sh | sh
+```
+
 Or install from GitHub directly:
 ```bash
 curl -sSL https://raw.githubusercontent.com/dobbyncicode/eap/prod/install.sh | sh
