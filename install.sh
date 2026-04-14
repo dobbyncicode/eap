@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-BASE_URL="https://raw.githubusercontent.com/dobbyncicode/eap/prod"
+BASE_URL="https://cdn.jsdelivr.net/gh/dobbyncicode/eap@prod"
 
 mkdir -p "$HOME/.local/bin"
 mkdir -p "$HOME/.eap"
