@@ -4,7 +4,7 @@ Minimalist environment and path manager.
 
 ## Quick Install
 ```bash
-curl -sSL https://cdn.jsdelivr.net/gh/dobbyncicode/eap@be78aa5/install.sh | sh
+curl -sSL https://cdn.jsdelivr.net/gh/dobbyncicode/eap@9fa717a/install.sh | sh
 ```
 
 Or install from GitHub directly:
@@ -24,13 +24,13 @@ Add the exact line corresponding to your shell to your configuration file.
 ### Zsh
 Add to `~/.zshrc`:
 ```zsh
-eval "$($HOME/.local/bin/eap activate zsh)"
+eval "$(~/.local/bin/eap activate zsh)"
 ```
 
 ### Bash
 Add to `~/.bashrc`:
 ```bash
-eval "$($HOME/.local/bin/eap activate bash)"
+eval "$(~/.local/bin/eap activate bash)"
 ```
 
 ### Fish
