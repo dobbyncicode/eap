@@ -2,7 +2,7 @@
 
 set -e
 
-REPO_URL="https://cdn.jsdelivr.net/gh/dobbyncicode/eap@main"
+REPO_URL="https://cdn.jsdelivr.net/gh/dobbyncicode/eap@prod"
 
 mkdir -p "$HOME/.eap"
 mkdir -p "$HOME/.config/eap"
