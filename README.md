@@ -4,15 +4,10 @@ Minimalist environment and path manager.
 
 ## Quick Install
 ```bash
-curl -sSL https://cdn.jsdelivr.net/gh/dobbyncicode/eap@v0.1.1/install.sh | sh
+curl -sSL https://cdn.jsdelivr.net/gh/dobbyncicode/eap@b069cb2/install.sh | sh
 ```
 
-If that doesn't work, try the commit SHA:
-```bash
-curl -sSL https://cdn.jsdelivr.net/gh/dobbyncicode/eap@e2b290f/install.sh | sh
-```
-
-Or install from GitHub directly:
+If that doesn't work, try direct from GitHub:
 ```bash
 curl -sSL https://raw.githubusercontent.com/dobbyncicode/eap/prod/install.sh | sh
 ```
@@ -26,16 +21,16 @@ curl -sSL https://raw.githubusercontent.com/dobbyncicode/eap/prod/install.sh | s
 ## Activation
 Add the exact line corresponding to your shell to your configuration file.
 
-### Zsh
-Add to `~/.zshrc`:
-```zsh
-eval "$(~/.local/bin/eap activate zsh)"
-```
-
 ### Bash
 Add to `~/.bashrc`:
 ```bash
 eval "$(~/.local/bin/eap activate bash)"
+```
+
+### Zsh
+Add to `~/.zshrc`:
+```zsh
+eval "$(~/.local/bin/eap activate zsh)"
 ```
 
 ### Fish
@@ -47,7 +42,7 @@ eval (~/.local/bin/eap activate fish | string collect)
 ### NuShell
 Add to `env.nu` or `config.nu`:
 ```nushell
-eval (eap activate nu)
+eval (~/.local/bin/eap activate nu)
 ```
 
 ---
