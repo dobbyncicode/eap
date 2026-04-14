@@ -2,6 +2,16 @@
 
 Minimalist environment and path manager.
 
+## Quick Install
+```bash
+curl -sSL https://cdn.jsdelivr.net/gh/dobbyncicode/eap@main/install.sh | sh
+```
+
+Or using raw GitHub:
+```bash
+curl -sSL https://raw.githubusercontent.com/dobbyncicode/eap/main/install.sh | sh
+```
+
 ## Requirements
 - Python 3.11+ (uses built-in `tomllib`)
 - For Python 3.10 and earlier: `pip install tomli`
