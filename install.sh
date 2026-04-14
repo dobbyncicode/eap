@@ -2,18 +2,17 @@
 
 set -e
 
-case ":$PATH:" in
-    *:"$HOME/.local/bin":*) ;;
-    *) export PATH="$HOME/.local/bin:$PATH" ;;
-esac
-
-echo "Installing eap..."
+REPO_URL="https://raw.githubusercontent.com/dobbyncicode/eap/main"
 
 mkdir -p "$HOME/.eap"
 mkdir -p "$HOME/.config/eap"
 
-cp core.py activate.sh uninstall.sh "$HOME/.eap/"
-cp core.py "$HOME/.local/bin/eap"
+echo "Downloading eap files..."
+curl -sSL "$REPO_URL/core.py" -o "$HOME/.eap/core.py"
+curl -sSL "$REPO_URL/activate.sh" -o "$HOME/.eap/activate.sh"
+curl -sSL "$REPO_URL/uninstall.sh" -o "$HOME/.eap/uninstall.sh"
+
+cp "$HOME/.eap/core.py" "$HOME/.local/bin/eap"
 
 chmod +x "$HOME/.eap/core.py"
 chmod +x "$HOME/.local/bin/eap"
