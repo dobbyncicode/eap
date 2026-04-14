@@ -1,17 +1,16 @@
 #!/bin/sh
-
 set -e
 
-REPO_URL="https://cdn.jsdelivr.net/gh/dobbyncicode/eap@6547832"
+BASE_URL="https://raw.githubusercontent.com/dobbyncicode/eap/prod"
 
 mkdir -p "$HOME/.local/bin"
 mkdir -p "$HOME/.eap"
 mkdir -p "$HOME/.config/eap"
 
 echo "Downloading eap files..."
-curl -sSL "$REPO_URL/core.py" -o "$HOME/.eap/core.py"
-curl -sSL "$REPO_URL/activate.sh" -o "$HOME/.eap/activate.sh"
-curl -sSL "$REPO_URL/uninstall.sh" -o "$HOME/.eap/uninstall.sh"
+curl -sSL "$BASE_URL/core.py" -o "$HOME/.eap/core.py"
+curl -sSL "$BASE_URL/activate.sh" -o "$HOME/.eap/activate.sh"
+curl -sSL "$BASE_URL/uninstall.sh" -o "$HOME/.eap/uninstall.sh"
 
 cp "$HOME/.eap/core.py" "$HOME/.local/bin/eap"
 
