@@ -4,7 +4,7 @@ Minimalist environment and path manager.
 
 ## Quick Install
 ```bash
-curl -sSL https://cdn.jsdelivr.net/gh/dobbyncicode/eap@latest/install.sh | sh
+curl -sSL https://dobbyncicode.github.io/eap/install.sh | sh
 ```
 
 ## Requirements

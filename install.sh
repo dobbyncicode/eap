@@ -1,8 +1,7 @@
 #!/bin/sh
 set -e
 
-LATEST_SHA=$(curl -s "https://api.github.com/repos/dobbyncicode/eap/commits/prod" | grep '"sha"' | head -1 | cut -d'"' -f4)
-BASE_URL="https://cdn.jsdelivr.net/gh/dobbyncicode/eap@$LATEST_SHA"
+BASE_URL="https://raw.githubusercontent.com/dobbyncicode/eap/main"
 
 mkdir -p "$HOME/.local/bin"
 mkdir -p "$HOME/.eap"
