@@ -147,7 +147,7 @@ def cmd_version() -> None:
 def cmd_activate(shell: str) -> None:
     import subprocess
 
-    activate_sh = Path(__file__).parent / "activate.sh"
+    activate_sh = Path.home() / ".eap" / "activate.sh"
     result = subprocess.run(
         ["sh", str(activate_sh), shell],
         capture_output=True,
