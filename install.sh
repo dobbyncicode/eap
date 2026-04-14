@@ -2,7 +2,7 @@
 
 set -e
 
-REPO_URL="https://raw.githubusercontent.com/dobbyncicode/eap/main"
+REPO_URL="https://raw.githubusercontent.com/dobbyncicode/eap/1ce82f236639b43c888610493a7537f3549f4b4a"
 
 mkdir -p "$HOME/.eap"
 mkdir -p "$HOME/.config/eap"
